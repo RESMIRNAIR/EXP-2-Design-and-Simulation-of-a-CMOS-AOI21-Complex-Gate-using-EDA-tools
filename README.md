@@ -2,7 +2,7 @@
 
 
 ## Aim
-To design and simulate a CMOS inverter circuit using Synopsys EDA tools, analyze its electrical characteristics, and study its transient response
+To design and simulate Y=(A+BC)' circuit using Synopsys EDA tools, analyze its electrical characteristics, and study its transient response
 
 ## Tools Required
 
@@ -44,11 +44,11 @@ To design and simulate a CMOS inverter circuit using Synopsys EDA tools, analyze
     Verify the inverter operation by comparing the input and output voltage levels.
 
 ## Circuit Diagram:
-#### 1. CMOS Inverter:
+#### 1. CMOS Logic: Y=(A+BC)'
 
-![image](https://github.com/user-attachments/assets/e3e06487-52b2-4b56-9dcd-03c5c9394a4c)
+<img width="190" height="261" alt="image" src="https://github.com/user-attachments/assets/4eeded35-4724-4994-9108-430d4669a791" />
 
-#### 2. Schematic of CMOS Inverter:
+#### 2. Schematic of CMOS L0gic:
 
    <img width="1033" height="733" alt="WhatsApp Image 2026-10-27 at 12 21 00 PM" src="https://github.com/user-attachments/assets/f234de9f-d81b-4759-a655-1a95ce3d015b" />
 
@@ -60,14 +60,14 @@ To design and simulate a CMOS inverter circuit using Synopsys EDA tools, analyze
 
 
 ## Output
-#### 1.Transient Analysis and DC Response Output
+#### 1.Transient Analysis
 
 <img width="1600" height="841" alt="WhatsApp Image 2026-10-27 at 12 21 10 PM" src="https://github.com/user-attachments/assets/bd160731-a49b-47fe-80b8-a598e09da0bc" />
 
 
 ## Results:
 
-1.	Successfully designed the CMOS inverter schematic using Cadence EDA tools.
+1.	Successfully designed the CMOS logic schematic using Synopsys EDA tools.
 2.	The simulation results demonstrated the correct logic operation of the inverter, where the output voltage switches between high (Vdd) and low (0V) levels, corresponding to the input voltage transitions.
 
 
