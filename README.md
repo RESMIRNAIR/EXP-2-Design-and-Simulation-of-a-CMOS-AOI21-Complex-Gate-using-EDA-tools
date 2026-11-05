@@ -22,15 +22,24 @@ To design and simulate Y=(A+BC)' circuit using Synopsys EDA tools, analyze its e
 ### 1. Launch Synopsys Custom Compiler Environment :
      Open Synopsys Custom Compiler and set up the working library.
      Create a new design library and associate it with the appropriate CMOS technology PDK.
-     Create a new schematic cell view for the CMOS inverter design.
+     Create a new schematic cell view for the CMOS design.
 ### 2. Schematic Design:
-    Select the NMOS and PMOS transistors from the technology library.
-    Connect the source terminal of the NMOS transistor to GND and its drain terminal to the output node.
-    Connect the source terminal of the PMOS transistor to VDD and its drain terminal to the same output node as the NMOS transistor.
-    Connect the gate terminals of both transistors together to form the input node (VIN).
-    Connect the NMOS bulk terminal to GND and the PMOS bulk terminal to VDD.
-    Connect a DC voltage source (VDC) to provide the supply voltage (VDD).
-    Connect a pulse voltage source (VPULSE) to provide the input signal.
+     Select three NMOS transistors and three PMOS transistors from the technology library.
+     Construct the NMOS pull-down network (PDN) by connecting transistor N1 in parallel with the series combination of transistors N2 and N3.
+     Connect the gate terminal of N1 to input A, the gate terminal of N2 to input B, and the gate terminal of N3 to input C.
+     Connect the drain terminal of N1 and the drain terminal of N2 to the output node Y.
+     Connect the source terminal of N1 to GND and the source terminal of N3 to GND. Connect the source terminal of N2 to the drain terminal of N3.
+     Construct the PMOS pull-up network (PUN) as the complementary connection of the NMOS pull-down network.
+     Connect PMOS transistor P1 in series with the parallel combination of PMOS transistors P2 and P3.
+     Connect the gate terminal of P1 to input A, the gate terminal of P2 to input B, and the gate terminal of P3 to input C.
+     Connect the source terminal of P1 to VDD. Connect the drain terminal of P1 to the common source terminals of P2 and P3.
+     Connect the drain terminals of P2 and P3 to the output node Y, which is common to the NMOS pull-down network.
+     Connect the bulk terminals of all PMOS transistors to VDD and the bulk terminals of all NMOS transistors to GND.
+     Connect a DC voltage source (VDC) to provide the required supply voltage (VDD).
+     Connect three pulse voltage sources (VPULSE) to provide the input signals A, B and C with appropriate pulse widths and time periods.
+     Connect the ground terminals of the voltage sources to the common ground node.
+     Save the schematic and perform Check and Save to verify the circuit connectivity.
+     Create a testbench and perform transient analysis to verify the output response for all possible input combinations.
 ### 3. Simulation:
     Check the schematic for errors and verify the electrical connections.
     Create a testbench for the CMOS inverter.
@@ -68,7 +77,7 @@ To design and simulate Y=(A+BC)' circuit using Synopsys EDA tools, analyze its e
 ## Results:
 
 1.	Successfully designed the CMOS logic schematic using Synopsys EDA tools.
-2.	The simulation results demonstrated the correct logic operation of the inverter, where the output voltage switches between high (Vdd) and low (0V) levels, corresponding to the input voltage transitions.
+2.	The circuit functionality was verified using transient analysis by applying different combinations of input signals A, B and C. The simulated output response was found to match the expected truth table.
 
 
 
