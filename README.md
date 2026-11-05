@@ -1,4 +1,5 @@
-# Ex No: 01 - Design & Implementation of CMOS Inverter Design Using Synopsis EDA Tools
+# Ex No: 02 - Design-and-Simulation-of-a-CMOS-AOI21-Complex-Gate-using-EDA-tools
+
 
 ## Aim
 To design and simulate a CMOS inverter circuit using Synopsys EDA tools, analyze its electrical characteristics, and study its transient response
