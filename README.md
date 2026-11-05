@@ -55,7 +55,8 @@ To design and simulate Y=(A+BC)' circuit using Synopsys EDA tools, analyze its e
 ## Circuit Diagram:
 #### 1. CMOS Logic: Y=(A+BC)'
 
-<img width="190" height="261" alt="image" src="https://github.com/user-attachments/assets/4eeded35-4724-4994-9108-430d4669a791" />
+<img width="190" height="261" alt="image" src="https://github.com/user-attachments/assets/4eeded35-4724-4994-9108-430d4669a791" />  <img width="197" height="137" alt="image" src="https://github.com/user-attachments/assets/a651962f-01a5-4e92-92d2-b1ec3cb3e588" />
+
 
 #### 2. Schematic of CMOS L0gic:
 
